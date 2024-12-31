@@ -2,7 +2,7 @@ import requests
 URL = 'https://api.pokemonbattle.ru/v2'
 TOKEN = 'fc89232c8210f6aee76fd3a6349d1fcd'
 HEADER = {'Content-Type' : 'application/json', 'trainer_token' : TOKEN}
-POKEMON_ID = '172371'
+POKEMON_ID = response.create.json()['id']
 
 body_create = {
     "name": "generate",
