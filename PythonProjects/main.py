@@ -13,7 +13,7 @@ print(response_create.text)
 
 body_rename = {
 	
-    "pokemon_id": "172371",
+    "pokemon_id": POKEMON_ID,
     "name": "New Name"
 
 }
@@ -21,7 +21,7 @@ response_rename = requests.patch(url = f'{URL}/pokemons', headers = HEADER, json
 print(response_rename.text)
 
 body_add_pokeball = {
-    "pokemon_id": "172371"
+    "pokemon_id": POKEMON_ID
 }
 
 response_add_pokeball = requests.post(url = f'{URL}/trainers/add_pokeball', headers = HEADER, json = body_add_pokeball)
